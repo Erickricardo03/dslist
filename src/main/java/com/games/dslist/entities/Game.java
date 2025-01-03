@@ -38,9 +38,9 @@ public class Game {
 	}
 
 
-	public Game(Long id, String title, Integer year, String genre, String plataform, Double score, String imgUrl,
+	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
-		
+		super();
 		this.id = id;
 		this.title = title;
 		this.year = year;
@@ -97,12 +97,11 @@ public class Game {
 		return platforms;
 	}
 
- 
-	public void setPltaforms(String plataform) {
-		this.platforms = plataform;
+
+	public void setPlatforms(String platforms) {
+		this.platforms = platforms;
 	}
 
-	
 
 	public Double getScore() {
 		return score;
@@ -162,6 +161,11 @@ public class Game {
 		return Objects.equals(id, other.id);
 	}
 
-		
+
+
+
+
+
+
 }
 
